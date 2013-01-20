@@ -78,6 +78,9 @@ public class DataFinder {
 			
 			url = new URL(REQUEST + word + REQUEST_END);
 			in = new BufferedReader(new InputStreamReader(url.openStream()));
+			/*
+			 * The following replacements remove pjson specific characters from the definitions.
+			 */
 			jsonRepresentation = in.readLine();
 			jsonRepresentation = jsonRepresentation.replace("dict_api.callbacks.id100(", "");
 			jsonRepresentation = jsonRepresentation.substring(0, jsonRepresentation.length()-1);
