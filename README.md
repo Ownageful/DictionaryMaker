@@ -3,7 +3,7 @@ DictionaryMaker
 
 Creates a key-value dictionary using the google dictionary API and a given a word list.
 
-Usage: java -jar DictionaryMaker.jar WORDLIST DEFINITIONS FAILEDWORDS
+Usage: java -jar DataFinder.jar WORDLIST DEFINITIONS FAILEDWORDS
 
 where 	WORDLIST is the a text file (.txt) of the words
 	DEFINITIONS is the name of the file in which to write the definitions
